@@ -9,22 +9,25 @@ import Foundation
 
 
 
-class ToDoList {
+class ToDoList : CustomStringConvertible {
     
-//    vars name, description, deadline
+//    vars name, descriptionList, deadline
     var name: String
-    var description: String
+    var descriptionList: String
     var date: Date?
+    var description: String {
+            return "\(name), \(descriptionList)"
+        }
     
-    init(_ name: String, _ description: String, _ date: Date){
+    init(_ name: String, _ descriptionList: String, _ date: Date){
         self.name = name
-        self.description = description
+        self.descriptionList = descriptionList
         self.date = date
     }
     
     
     
-    func userInput() {
+    func creatingToDo() {
 //        create a new todo by providing its "name", "description", and  (OPTIONAL"deadline") -> date only of the todo
         print("ToDo List of \(name)")
     }
