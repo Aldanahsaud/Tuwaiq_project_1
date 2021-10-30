@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		F4409D562721A57D00B32BF3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4409D552721A57D00B32BF3 /* main.swift */; };
 		F4409D5D2721A58C00B32BF3 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4409D5C2721A58C00B32BF3 /* utils.swift */; };
+		F44B006C27270B580042EB71 /* task_class.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B006B27270B580042EB71 /* task_class.swift */; };
+		F44B006E27270B840042EB71 /* to_do_list_class.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B006D27270B840042EB71 /* to_do_list_class.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +29,8 @@
 		F4409D522721A57D00B32BF3 /* Project_1_tawuiq */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Project_1_tawuiq; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4409D552721A57D00B32BF3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F4409D5C2721A58C00B32BF3 /* utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
+		F44B006B27270B580042EB71 /* task_class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = task_class.swift; sourceTree = "<group>"; };
+		F44B006D27270B840042EB71 /* to_do_list_class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = to_do_list_class.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 			children = (
 				F4409D552721A57D00B32BF3 /* main.swift */,
 				F4409D5C2721A58C00B32BF3 /* utils.swift */,
+				F44B006B27270B580042EB71 /* task_class.swift */,
+				F44B006D27270B840042EB71 /* to_do_list_class.swift */,
 			);
 			path = Project_1_tawuiq;
 			sourceTree = "<group>";
@@ -124,6 +130,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4409D562721A57D00B32BF3 /* main.swift in Sources */,
+				F44B006C27270B580042EB71 /* task_class.swift in Sources */,
+				F44B006E27270B840042EB71 /* to_do_list_class.swift in Sources */,
 				F4409D5D2721A58C00B32BF3 /* utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
