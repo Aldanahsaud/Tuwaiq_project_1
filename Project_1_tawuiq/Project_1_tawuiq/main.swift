@@ -18,13 +18,31 @@ print("Enter any number to start a list and 0 to end this 🐧: ", terminator: "
 let number = Int(readLine() ?? "") ?? 0
 if number == 0 {
     print("invalid")
+    print("Enter any number to start a list and 0 to end this 🐧: ", terminator: "")
+    let number = Int(readLine() ?? "") ?? 0
+    if number == 0 {
+        print("invalid, GAME OVER")
+    }
+    
 }
 
 while number != 0 {
+    // testingggggg
     print("what you wanna do? ENTER (1) print (2) add (3)update (4) remove,(0) for exiting this list: ", terminator: "")
     let enter1 = Int(readLine() ?? "") ?? 00
     if enter1 == 00 {
         print("invalid")
+        print("Try again, what you wanna do? ENTER (1) print (2) add (3)update (4) remove,(0) for exiting this list: ", terminator: "")
+        let enter2 = Int(readLine() ?? "") ?? 00
+        if enter2 == 00 {
+            print("invalid")
+            print("Last chance, what you wanna do? ENTER (1) print (2) add (3)update (4) remove,(0) for exiting this list: ", terminator: "")
+            let enter3 = Int(readLine() ?? "") ?? 00
+            if enter3 == 00 {
+                print("GAME OVER!")
+            }
+        }
+        
     }
     
     
