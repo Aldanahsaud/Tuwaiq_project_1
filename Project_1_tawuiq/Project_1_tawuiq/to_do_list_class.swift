@@ -8,7 +8,7 @@
 import Foundation
 
 class ToDoList {
-     var tasks : [Tasks] = []
+     var tasks : [Tasks]
     
 
     init() {
@@ -23,9 +23,8 @@ class ToDoList {
     func printTodos(){
         var x = 1
         for t in tasks {
-            print(x,")", t.name, t.desc, t.deadline ?? "NO DEADLINE")
+            print(x,")", t.name, t.desc, t.deadline ?? "No deadline")
             x += 1
-
         }
     }
     
@@ -41,9 +40,10 @@ class ToDoList {
         tasks.remove(at: id)
         
     }
+    
     func getDateFrom(_ dateString: String) -> Date? {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss.SSS"
+        dateFormatter.dateFormat = "dd/MM/yy"
         dateFormatter.timeZone = .init(abbreviation: "GMT")
         guard let date = dateFormatter.date(from: dateString)
         else {
@@ -51,7 +51,6 @@ class ToDoList {
         }
         return date
       }
-    
 }
 
 

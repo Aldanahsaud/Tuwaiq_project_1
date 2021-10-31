@@ -14,39 +14,22 @@ let name = Utils.readString()
 //let enter1 = Utils.readInt()
 var obj1 = ToDoList()
 
-print("Enter any number to start a list and 0 to end this 🐧: ", terminator: "")
+print("Enter any number from 1 to start a list 🐧: ", terminator: "")
 let number = Int(readLine() ?? "") ?? 0
 if number == 0 {
     print("invalid")
-    print("Enter any number to start a list and 0 to end this 🐧: ", terminator: "")
-    let number = Int(readLine() ?? "") ?? 0
-    if number == 0 {
-        print("invalid, GAME OVER")
-    }
     
 }
 
 while number != 0 {
-    // testingggggg
     print("what you wanna do? ENTER (1) print (2) add (3)update (4) remove,(0) for exiting this list: ", terminator: "")
     let enter1 = Int(readLine() ?? "") ?? 00
     if enter1 == 00 {
         print("invalid")
-        print("Try again, what you wanna do? ENTER (1) print (2) add (3)update (4) remove,(0) for exiting this list: ", terminator: "")
-        let enter2 = Int(readLine() ?? "") ?? 00
-        if enter2 == 00 {
-            print("invalid")
-            print("Last chance, what you wanna do? ENTER (1) print (2) add (3)update (4) remove,(0) for exiting this list: ", terminator: "")
-            let enter3 = Int(readLine() ?? "") ?? 00
-            if enter3 == 00 {
-                print("GAME OVER!")
-            }
-        }
         
     }
     
-    
-    switch enter1 {
+    switch enter1{
     case 1:
         print("List of \(name)🎋:")
         obj1.printTodos()
@@ -55,7 +38,7 @@ while number != 0 {
         let enteredName = Utils.readString()
         print("* What is your task's Description ↓: ", terminator: "")
         let enteredDesc = Utils.readString()
-        print("What is your task's deadline، please enter date in this format yyyy-MM-dd HH:mm:ss ↓: ", terminator: "")
+        print("What is your task's deadline، please enter date in this format dd/MM/yy ↓: ", terminator: "")
         let enteredDeadline = Utils.readString()
         let date = obj1.getDateFrom(enteredDeadline)
         let taskk = Tasks(enteredName, enteredDesc, date)
@@ -84,7 +67,8 @@ while number != 0 {
     case 0:
         print("Goodbye 👋🏼")
     default:
-        print("Press Enter")
+       print("program gonna break")
+        break
     
     }
     if enter1 == 0 {

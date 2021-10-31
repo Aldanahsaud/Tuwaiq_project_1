@@ -25,10 +25,4 @@ class Tasks {
          self.deadline = p.deadline
 
     }
-    
-//    convenience init(){
-//        self.init("New Task", "desc", "date")
-//    }
-    
-    
 }
