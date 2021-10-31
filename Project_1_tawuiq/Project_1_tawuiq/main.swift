@@ -10,8 +10,6 @@ import Foundation
 
 print("Enter your pretty name👩🏻/👨🏻: ", terminator: "")
 let name = Utils.readString()
-//print("what you wanna do? ENTER (1) print (2) add (3)update (4) remove", terminator: "")
-//let enter1 = Utils.readInt()
 var obj1 = ToDoList()
 
 print("Enter any number from 1 to start a list 🐧: ", terminator: "")
