@@ -20,7 +20,7 @@ if number == 0 {
 }
 
 while number != 0 {
-    print("what you wanna do? ENTER (1) print (2) add (3)update (4) remove,(0) for exiting this list: ", terminator: "")
+    print("what you wanna do? ENTER (1) print (2) add (3)update (4) remove,(5) for sorting by nearest dete, (6) for sorting by the farest date(0) for exiting this list: ", terminator: "")
     let enter1 = Int(readLine() ?? "") ?? 00
     if enter1 == 00 {
         print("invalid")
@@ -62,13 +62,23 @@ while number != 0 {
         let removeUpdate = Utils.readInt()
         let reIn = removeUpdate - 1
         obj1.removeTodoList(reIn)
+    case 5:
+        obj1.reOrderAList()
+        obj1.printTodos()
+    case 6:
+        obj1.reOrderAListFarest()
+        obj1.printTodos()
     case 0:
         print("Goodbye 👋🏼")
+        break
     default:
        print("program gonna break")
         break
     
     }
+//    while enter1 == 0 {
+//        break
+//    }
     if enter1 == 0 {
         break
     }

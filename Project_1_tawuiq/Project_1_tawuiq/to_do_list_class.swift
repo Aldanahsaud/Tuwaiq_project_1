@@ -51,6 +51,25 @@ class ToDoList {
         }
         return date
       }
+    func reOrderAList(){
+        tasks = tasks.sorted(by: { l1, l2 in
+            if let fd = l1.deadline, let sd = l2.deadline {
+                return fd < sd
+            } else {
+                return false
+            }
+        })
+    }
+    func reOrderAListFarest(){
+        tasks = tasks.sorted(by: { l1, l2 in
+            if let fd = l1.deadline, let sd = l2.deadline {
+                return fd > sd
+            } else {
+                return false
+            }
+        })
+    }
+
 }
 
 
@@ -58,12 +77,4 @@ class ToDoList {
 
 //    !!!BONUS!!!
     
-    func reOrderAList(){
-        //        var sortTask = tasks.sorted(by: { l1, l2 in
-        //            if let fd = l1.deadline, let sd = l2.deadline {
-        //                return fd < sd
-        //            } else {
-        //                return false
-        //            }
-        //        })
-    }
+   
