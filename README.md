@@ -1,9 +1,4 @@
-# Tuwaiq_project_1
-
-                       My first project in Tuwaiq_1000 bootcamp
-
-                              ##ToDo List for a User in the #Command Line 
- 
+# To-Do app in the Command Line
 
 
 ## Requirements
